@@ -7,7 +7,11 @@ def main():
     randomchoice = random.choice(word_list)
     lenth = len(randomchoice)
     print("The answer is a",lenth,"letter word. You have",lenth,"lives remaining")
-    input("Guess a letter")
+    guess = input("Guess a letter")
+    for letter in randomchoice:
+        if guess == letter:
+            
+        print("Correct")
     
 def checkWin(guessed_letters, selected_word):
     pass
